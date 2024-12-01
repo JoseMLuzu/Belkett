@@ -1,0 +1,28 @@
+/* Estilo del botón flotante */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px; /* Asegúrate de que el botón se quede en la parte inferior */
+  right: 20px; /* Colócalo a la derecha */
+  background-color: #25d366; /* Color verde de WhatsApp */
+  color: white;
+  width: 60px; /* Tamaño del botón */
+  height: 60px; /* Tamaño del botón */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto flotante */
+  font-size: 30px; /* Tamaño del ícono */
+  z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+  transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Efecto hover */
+.whatsapp-btn:hover {
+  background-color: #128c7e; /* Cambio de color en hover */
+}
+
+/* Estilo para el ícono de WhatsApp (si estás usando FontAwesome o similar) */
+.whatsapp-btn i {
+  pointer-events: none; /* Evita que el ícono interfiera con el clic en el enlace */
+}
