@@ -9,7 +9,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import FooterBanner from "./components/FooterBanner";
-import WhatsAppButton from "./components/wppButton";
+import WhatsAppButton from "./components/WppButton";
 
 import Home from "./pages/Home";
 import Nosotros from "./pages/Historia";
