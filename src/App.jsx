@@ -53,7 +53,7 @@ function App() {
 // Componente condicional para FooterBanner
 function ConditionalFooterBanner() {
   const location = useLocation();
-  const excludedPaths = ["/nosotros", "/contacto"];
+  const excludedPaths = ["/nosotros", "/contacto", "/"];
 
   return !excludedPaths.includes(location.pathname) ? <FooterBanner /> : null;
 }

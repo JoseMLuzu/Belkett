@@ -14,6 +14,11 @@ function Navbar() {
     setIsCustomContainerOpen(!isCustomContainerOpen);
   };
 
+  const closeMenus = () => {
+    setIsMenuOpen(false);
+    setIsCustomContainerOpen(false);
+  };
+
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 w-full">
@@ -58,6 +63,7 @@ function Navbar() {
             <li>
               <Link
                 to="/"
+                onClick={closeMenus}
                 className="block py-2 px-3 text-black bg-transparent rounded md:bg-transparent md:text-black md:p-0 md:dark:text-black dark:bg-transparent md:dark:bg-transparent"
                 aria-current="page"
               >
@@ -87,7 +93,6 @@ function Navbar() {
                   />
                 </svg>
               </button>
-              {/* El div del dropdown solo aparece si el menú está abierto */}
               <div
                 className={`${
                   isCustomContainerOpen ? "block" : "hidden"
@@ -97,6 +102,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/bouquets"
+                      onClick={closeMenus}
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Bouquets
@@ -105,6 +111,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/arreglos-florales"
+                      onClick={closeMenus}
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Arreglos Florales
@@ -113,6 +120,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/cajas-florales"
+                      onClick={closeMenus}
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Cajas Florales
@@ -121,6 +129,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/floreros"
+                      onClick={closeMenus}
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Floreros
@@ -129,6 +138,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/ramos-de-novia"
+                      onClick={closeMenus}
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Ramos de Novia y Corsage
@@ -137,6 +147,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/plantas"
+                      onClick={closeMenus}
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Plantas
@@ -145,6 +156,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/accesorios"
+                      onClick={closeMenus}
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Accesorios
@@ -156,6 +168,7 @@ function Navbar() {
             <li>
               <Link
                 to="/nosotros"
+                onClick={closeMenus}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 -green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Nosotros
@@ -164,6 +177,7 @@ function Navbar() {
             <li>
               <Link
                 to="/contacto"
+                onClick={closeMenus}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 -blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Contacto
