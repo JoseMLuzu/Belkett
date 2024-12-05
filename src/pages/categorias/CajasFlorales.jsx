@@ -9,37 +9,37 @@ const CajasFlorales = () => {
     {
       id: 1,
       name: "Como Quisiera Decirte",
-      image: "/public/CajasFlorales/cajas5.png",
+      image: "/CajasFlorales/cajas5.png",
       description: 28,
     },
     {
       id: 2,
       name: "No Te Aparte De Mí",
-      image: "/public/CajasFlorales/cajas6.png",
+      image: "/CajasFlorales/cajas6.png",
       description: 28,
     },
     {
       id: 3,
       name: "Algo Contigo",
-      image: "/public/CajasFlorales/cajas2.png",
+      image: "/CajasFlorales/cajas2.png",
       description: 45,
     },
     {
       id: 4,
       name: "Amiga Mía",
-      image: "/public/CajasFlorales/cajas1.png",
+      image: "/CajasFlorales/cajas1.png",
       description: 65,
     },
     {
       id: 5,
       name: "Para Empezar",
-      image: "/public/CajasFlorales/cajas3.png",
+      image: "/CajasFlorales/cajas3.png",
       description: 65,
     },
     {
       id: 6,
       name: "Nunca Es Suficiente",
-      image: "/public/CajasFlorales/cajas4.png",
+      image: "/CajasFlorales/cajas4.png",
       description: 75,
     },
   ];
@@ -48,7 +48,7 @@ const CajasFlorales = () => {
     <div>
       <Jumbotron
         title="Cajas Florales"
-        backgroundImage="/public/banners/paper-1074131.jpg"
+        backgroundImage="/banners/paper-1074131.jpg"
       />
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

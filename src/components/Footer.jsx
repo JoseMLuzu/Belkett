@@ -11,11 +11,7 @@ function Footer() {
               href="https://flowbite.com/"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
-              <img
-                src="/public/logo-largo.png"
-                className="h-10"
-                alt="Flowbite Logo"
-              />
+              <img src="/logo-largo.png" className="h-10" alt="Flowbite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">

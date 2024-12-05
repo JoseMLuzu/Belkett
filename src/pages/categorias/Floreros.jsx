@@ -9,31 +9,31 @@ const Floreros = () => {
     {
       id: 1,
       name: "Imagina",
-      image: "/public/floreros/floreros1.png",
+      image: "/floreros/floreros1.png",
       price: 24,
     },
     {
       id: 2,
       name: "Bella",
-      image: "/public/floreros/floreros2.png",
+      image: "/floreros/floreros2.png",
       price: "24",
     },
     {
       id: 3,
       name: "Nadie Como Tú",
-      image: "/public/floreros/floreros3.png",
+      image: "/floreros/floreros3.png",
       price: 24,
     },
     {
       id: 4,
       name: "40 y 42",
-      image: "/public/floreros/floreros4.png",
+      image: "/floreros/floreros4.png",
       price: 42,
     },
     {
       id: 5,
       name: "Mi Primer Dia Sin Ti",
-      image: "/public/floreros/floreros5.png",
+      image: "/floreros/floreros5.png",
       price: 75,
     },
   ];
@@ -42,7 +42,7 @@ const Floreros = () => {
     <div>
       <Jumbotron
         title="Floreros"
-        backgroundImage="/public/banners/paper-1074131.jpg"
+        backgroundImage="/banners/paper-1074131.jpg"
       />
 
       <div className="container mx-auto p-4">

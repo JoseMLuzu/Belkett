@@ -9,25 +9,25 @@ const RamosDeNovia = () => {
     {
       id: 1,
       name: "Eres Mía",
-      image: "/public/novia/novia3.png",
+      image: "/novia/novia3.png",
       price: 12,
     },
     {
       id: 2,
       name: "Que Me Alcance La Vida",
-      image: "/public/novia/novia1.png",
+      image: "/novia/novia1.png",
       price: 55,
     },
     {
       id: 3,
       name: "La Incondicional",
-      image: "/public/novia/novia2.png",
+      image: "/novia/novia2.png",
       price: 55,
     },
     {
       id: 4,
       name: "Por Ti Me Casaré",
-      image: "/public/novia/novia4.png",
+      image: "/novia/novia4.png",
       price: 55,
     },
   ];
@@ -36,7 +36,7 @@ const RamosDeNovia = () => {
     <div>
       <Jumbotron
         title="Ramos de Novia y Corsage"
-        backgroundImage="/public/banners/paper-1074131.jpg"
+        backgroundImage="/banners/paper-1074131.jpg"
       />
 
       <div className="container mx-auto p-4">

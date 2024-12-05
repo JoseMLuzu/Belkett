@@ -9,27 +9,27 @@ const Bouquets = () => {
     {
       id: 1,
       name: "Solamente Tu",
-      image: "/public/bouquets/bouquet1.png",
+      image: "/bouquets/bouquet1.png",
     },
     {
       id: 2,
       name: "Amor Eterno",
-      image: "/public/bouquets/bouquet2.png",
+      image: "/bouquets/bouquet2.png",
     },
     {
       id: 3,
       name: "Pacto de Amor",
-      image: "/public/bouquets/bouquet3.png",
+      image: "/bouquets/bouquet3.png",
     },
     {
       id: 4,
       name: "Lo Intentamos",
-      image: "/public/bouquets/bouquet4.png",
+      image: "/bouquets/bouquet4.png",
     },
     {
       id: 4,
       name: "Detalles",
-      image: "/public/bouquets/bouquet5.png",
+      image: "/bouquets/bouquet5.png",
     },
   ];
 
@@ -58,7 +58,7 @@ const Bouquets = () => {
     <div>
       <Jumbotron
         title="Bouquets"
-        backgroundImage="/public/banners/paper-1074131.jpg"
+        backgroundImage="/banners/paper-1074131.jpg"
       />
       <MultiItemCard mainTitle={cardData.mainTitle} items={cardData.items} />
       <div className="container mx-auto p-4">

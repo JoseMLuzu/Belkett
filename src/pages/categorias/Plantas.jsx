@@ -9,29 +9,26 @@ const Plantas = () => {
     {
       id: 1,
       name: "Amor Eterno",
-      image: "/public/plantas/plantas3.png",
+      image: "/plantas/plantas3.png",
       price: 35,
     },
     {
       id: 2,
       name: "Por Fin Te Encontré",
-      image: "/public/plantas/plantas2.png",
+      image: "/plantas/plantas2.png",
       price: 38,
     },
     {
       id: 3,
       name: "Happy Together",
-      image: "/public/plantas/plantas1.png",
+      image: "/plantas/plantas1.png",
       price: 48,
     },
   ];
 
   return (
     <div>
-      <Jumbotron
-        title="Plantas"
-        backgroundImage="/public/banners/paper-1074131.jpg"
-      />
+      <Jumbotron title="Plantas" backgroundImage="/banners/paper-1074131.jpg" />
 
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

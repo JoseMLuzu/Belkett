@@ -15,7 +15,7 @@ const Historia = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src="/public/banners/bannerNosotros.png"
+            src="/banners/bannerNosotros.png"
             alt="Un ramo de flores, representando nuestra historia"
             className="rounded-lg shadow-lg w-full max-w-md md:max-w-lg"
           />

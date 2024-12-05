@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import Jumbotron from "../components/ui/jumbotron";
-import BackgroundImage from "../../public/banners/banner2.png";
+import BackgroundImage from "/banners/banner2.png";
 
 import "../styles/Home.css";
 
@@ -12,7 +11,7 @@ const Home = () => {
     {
       id: 1,
       name: "Bouquets",
-      image: "/public/bouquets/bouquet1.png",
+      image: "/bouquets/bouquet1.png",
       link: "/bouquets",
     },
     {

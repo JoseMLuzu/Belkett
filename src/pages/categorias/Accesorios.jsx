@@ -9,29 +9,26 @@ const Accesorios = () => {
     {
       id: 1,
       name: "Eres Ese Algo",
-      image: "/public/accesorios/accesorios2.png",
+      image: "/accesorios/accesorios2.png",
       price: 38,
     },
     {
       id: 2,
       name: "Adicto",
-      image: "/public/accesorios/accesorios1.png",
+      image: "/accesorios/accesorios1.png",
       price: 45,
     },
     {
       id: 3,
       name: "Brindis Por Ti",
-      image: "/public/accesorios/accesorios3.png",
+      image: "/accesorios/accesorios3.png",
       price: "60",
     },
   ];
 
   return (
     <div>
-      <Jumbotron
-        title="Accesorios"
-        backgroundImage="/public/banners/banner.png"
-      />
+      <Jumbotron title="Accesorios" backgroundImage="/banners/banner.png" />
 
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
