@@ -48,7 +48,7 @@ const CajasFlorales = () => {
     <div>
       <Jumbotron
         title="Cajas Florales"
-        backgroundImage="/banners/paper-1074131.jpg"
+        backgroundImage="/banners/black-plain-concrete-textured.png"
       />
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,6 +1,5 @@
 import React from "react";
 import Jumbotron from "../../components/ui/jumbotron";
-import MultiItemCard from "../../components/ui/MultiItemCard";
 
 import "../../styles/Bouquetes.css";
 
@@ -29,31 +28,13 @@ const ArreglosFlorales = () => {
     },
   ];
 
-  const cardData = {
-    mainTitle: "Elige Tu Bouquet",
-    items: [
-      {
-        title: "Orquidea",
-        price: "$35",
-      },
-      {
-        title: "Caja",
-        price: "$65",
-      },
-      {
-        title: "Bombonera de cristal",
-        price: "$75",
-      },
-    ],
-  };
-
   return (
     <div>
       <Jumbotron
         title="Arreglos Florales"
-        backgroundImage="/banners/banner.png"
+        backgroundImage="/banners/black-plain-concrete-textured.png"
       />
-      <MultiItemCard mainTitle={cardData.mainTitle} items={cardData.items} />
+
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product) => (

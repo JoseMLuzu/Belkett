@@ -42,7 +42,7 @@ const Floreros = () => {
     <div>
       <Jumbotron
         title="Floreros"
-        backgroundImage="/banners/paper-1074131.jpg"
+        backgroundImage="/banners/black-plain-concrete-textured.png"
       />
 
       <div className="container mx-auto p-4">

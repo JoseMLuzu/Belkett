@@ -37,17 +37,17 @@ const Bouquets = () => {
     mainTitle: "Elige Tu Bouquet",
     items: [
       {
-        title: "Pequeño",
+        title: "Básico",
         description: "Cantidad de tallos 40",
         price: "$30",
       },
       {
-        title: "Mediano",
+        title: "Estándar",
         description: "Cantidad de tallos 70",
         price: "$45",
       },
       {
-        title: "Romantic Rose Box",
+        title: "Premiun",
         description: "Cantidad de tallos 100.",
         price: "$60",
       },
@@ -58,7 +58,7 @@ const Bouquets = () => {
     <div>
       <Jumbotron
         title="Bouquets"
-        backgroundImage="/banners/paper-1074131.jpg"
+        backgroundImage="/banners/black-plain-concrete-textured.png"
       />
       <MultiItemCard mainTitle={cardData.mainTitle} items={cardData.items} />
       <div className="container mx-auto p-4">
