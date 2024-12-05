@@ -64,11 +64,10 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li>
+            <li className="relative">
               <button
                 onClick={toggleCustomContainer}
                 id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
                 className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 -blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
               >
                 Catalogo
@@ -88,9 +87,11 @@ function Navbar() {
                   />
                 </svg>
               </button>
+              {/* El div del dropdown solo aparece si el menú está abierto */}
               <div
-                id="dropdownNavbar"
-                className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                className={`${
+                  isCustomContainerOpen ? "block" : "hidden"
+                } z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 absolute left-0 mt-2`}
               >
                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-400">
                   <li>
@@ -149,7 +150,6 @@ function Navbar() {
                       Accesorios
                     </Link>
                   </li>
-                  {/* Agrega más enlaces aquí */}
                 </ul>
               </div>
             </li>
