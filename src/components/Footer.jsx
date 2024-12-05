@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -19,24 +20,36 @@ function Footer() {
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  About
+                <a
+                  href="https://www.tiktok.com/@belkett_flowershop?_t=ZM-8rtaGALOt0C&_r=1"
+                  className="hover:underline me-4 md:me-6"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-tiktok"></i>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  Privacy Policy
+                <a
+                  href="https://www.instagram.com/belkett_flowershop/?igsh=MTRjeHFybHF0dWFxeA%3D%3D"
+                  className="hover:underline me-4 md:me-6"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  Licensing
+                <a
+                  href="https://www.facebook.com/people/Belkett/100091549671261/?mibextid=kFxxJD&rdid=NCp6xsYTWB35Yt6C&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DUME7JHe4%2F%3Fmibextid%3DkFxxJD"
+                  className="hover:underline me-4 md:me-6"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Contact
-                </a>
+                <Link to="/contacto" className="hover:underline">
+                  Contacto
+                </Link>
               </li>
             </ul>
           </div>

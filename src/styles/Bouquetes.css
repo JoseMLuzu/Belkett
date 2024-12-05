@@ -1,0 +1,19 @@
+.zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-container img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-container:hover img {
+  transform: scale(1.1);
+}
+
+.zoom-container img {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  max-height: 335px; /* Establece una altura máxima */
+  object-fit: cover;
+}

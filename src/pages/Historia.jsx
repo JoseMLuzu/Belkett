@@ -1,50 +1,58 @@
 import React from "react";
+import { motion } from "framer-motion"; // Importamos motion
 
-function Historia() {
+import "../styles/Nosotros.css";
+
+const Historia = () => {
   return (
-    <div>
-      <section className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-        <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-            We invest in the world’s potential
-          </h1>
-          <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-            Here at Flowbite we focus on markets where technology, innovation,
-            and capital can unlock long-term value and drive economic growth.
+    <section className="nosotros bg-gray-100 py-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16 px-4">
+        {/* Imagen con animación */}
+        <motion.div
+          className="flex justify-center"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <img
+            src="/public/banners/bannerNosotros.png"
+            alt="Un ramo de flores, representando nuestra historia"
+            className="rounded-lg shadow-lg w-full max-w-md md:max-w-lg"
+          />
+        </motion.div>
+
+        {/* Texto elegante con animación */}
+        <motion.div
+          className="text-gray-800"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
+          <h2 className="text-4xl font-bold mb-6">Nuestra Historia</h2>
+          <p className="text-lg leading-relaxed mb-6">
+            Belkett Flower Shop comenzó sus operaciones en 2005, gracias a la
+            visión emprendedora de Marco y Gabriela, una pareja que identificó
+            una oportunidad única en el mercado. Se dieron cuenta de que muchas
+            personas deseaban expresar sus emociones y sentimientos a través de
+            un detalle especial, pero a menudo no encontraban opciones
+            accesibles y de calidad.
           </p>
-          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a
-              href="#"
-              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-            >
-              Get started
-              <svg
-                className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
-            >
-              Learn more
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+          <p className="text-lg leading-relaxed mb-6">
+            A lo largo de los años, Belkett ha sido parte de innumerables
+            historias emotivas: desde hijos que se reencuentran con sus madres
+            después de años, parejas que celebran un amor a distancia, hasta
+            abuelitas que conocen a sus nietos por primera vez. Estas vivencias
+            son nuestro mayor motor y nos inspiran a seguir mejorando cada día.
+          </p>
+          <p className="text-lg leading-relaxed mb-6">
+            Hoy, Belkett Flower Shop sigue creciendo, ofreciendo productos de
+            alta calidad, diseñados con amor y dedicación, para que cada detalle
+            cuente una historia inolvidable.
+          </p>
+        </motion.div>
+      </div>
+    </section>
   );
-}
+};
 
 export default Historia;

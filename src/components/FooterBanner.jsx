@@ -8,7 +8,7 @@ const cardData = {
   mainTitle: "Tu Pedido Incluye",
   items: [
     {
-      icon: <FaLocationArrow className="w-12 h-12 text-black" />,
+      icon: <FaLocationArrow className="w-12 h-12 text-blue-800" />,
       title: "Envío a domicilio",
       description:
         "Las entregas se realizan siempre que las ordenes se han ingresado antes de las 3pm. Las ordenes recibidas después de ese horario se coordinarán para el siguiente día.",
@@ -20,7 +20,7 @@ const cardData = {
         "Se incluye en tu bouquet o arreglo una tarjeta impresa con tus palabras",
     },
     {
-      icon: <FaStar className="w-12 h-12 text-black" />,
+      icon: <FaStar className="w-12 h-12 text-yellow-300" />,
       title: "Garantía de calidad",
       description:
         "Con cada pedido, incluimos un manual sobre el cuidado de las flores para que duren el mayor tiempo posible.",
@@ -42,7 +42,7 @@ const FooterBanner = ({ mainTitle, items }) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="text-center bg-white rounded-lg p-6 shadow-lg dark:bg-gray-700 transition-all hover:shadow-xl hover:scale-105"
+              className="text-center bg-white rounded-lg p-6 shadow-lg dark:bg-gray-700 transition-all hover:shadow-xl hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-600 transform duration-300"
             >
               {/* Icono centrado */}
               <div className="mb-4 flex justify-center items-center">

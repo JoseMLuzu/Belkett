@@ -1,0 +1,30 @@
+.contacto {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+/* Efecto de entrada suave */
+
+.contacto {
+  animation: fadeIn 1s ease-out;
+}
+
+.bgcontacto,
+.bg-white {
+  animation: fadeIn 1.2s ease-out;
+}
+
+.mrg {
+  margin-bottom: 30px;
+}
+
+ul li,
+h4,
+h3,
+p {
+  animation: fadeIn 1.4s ease-out;
+}
+
+iframe {
+  animation: fadeIn 1.6s ease-out;
+}

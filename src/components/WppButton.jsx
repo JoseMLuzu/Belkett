@@ -2,8 +2,8 @@ import React from "react";
 import "../styles/WppButton.css";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "5930963717115"; // Número de teléfono con código de país
-  const message = "Hola, me gustaría reservar una habitación"; // Mensaje predefinido
+  const phoneNumber = "5930998474689"; // Número de teléfono con código de país
+  const message = "Hola, me gustaría mas información sobre"; // Mensaje predefinido
 
   return (
     <a

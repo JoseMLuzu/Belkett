@@ -1,4 +1,32 @@
-.logo {
-  height: auto;
-  width: 100px;
+/* Navbar contenedor */
+.navbar {
+  height: 120px; /* Mantén la altura constante de la navbar */
+  display: flex;
+  align-items: center; /* Asegura que el contenido se alinee verticalmente */
+  justify-content: space-between;
+  padding: 0 20px; /* Espaciado en los laterales */
+}
+
+/* Logo */
+.navbar-logo {
+  width: 200px; /* Tamaño más grande del logo */
+  height: auto; /* Mantiene la proporción */
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  object-fit: contain; /* Evita que la imagen se distorsione */
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+}
+
+.navbar a:hover {
+  color: #d4af37; /* Color dorado */
+  transition: color 0.3s ease-in-out; /* Efecto de transición suave */
+}
+
+.navbar .dropdown a:hover {
+  background-color: rgba(212, 175, 55, 0.1); /* Fondo dorado translúcido */
+  color: #d4af37;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
