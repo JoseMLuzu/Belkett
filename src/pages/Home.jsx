@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -52,16 +53,46 @@ const Home = () => {
     },
   ];
 
+  const words = [
+    "Amor",
+    "Unión",
+    "Belleza",
+    "Arte",
+    "Vida",
+    "Confianza",
+    "Libertad",
+    "Historia",
+  ];
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  // Cambiar la palabra cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 3000); // Cambiar cada 3 segundos
+
+    return () => clearInterval(interval); // Limpia el intervalo al desmontar
+  }, [words.length]);
+
   return (
     <div>
       <section
-        className=" jumbo bg-center bg-no-repeat bg-gray-400 bg-blend-multiply"
+        className="jumbo bg-center bg-no-repeat bg-gray-400 bg-blend-multiply"
         style={{ backgroundImage: `url(${BackgroundImage})` }}
       >
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-            En Belkett Flower Shop, cada flor cuenta una historia, y nosotros
-            estamos aquí para ayudarte a contarla
+            Belkett es{" "}
+            <motion.span
+              key={currentWordIndex} // Cambiar key para reiniciar la animación
+              initial={{ opacity: 0, y: 50 }} // Animación de entrada
+              animate={{ opacity: 1, y: 0 }} // Animación activa
+              exit={{ opacity: 0, y: -50 }} // Animación de salida
+              transition={{ duration: 0.8 }} // Duración de la animación
+              className="text-red-700"
+            >
+              {words[currentWordIndex]}
+            </motion.span>
           </h1>
         </div>
       </section>
@@ -81,7 +112,11 @@ const Home = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          BELKETT
+          <img
+            className="h-16"
+            src="/public/logo-largo.png "
+            alt="logo de Belkett"
+          />
           <hr></hr>
         </motion.h1>
         <motion.p
@@ -112,6 +147,7 @@ const Home = () => {
           sorpresa y ocasión especial.
         </motion.p>
       </motion.div>
+
       {/* Sección de productos */}
       <div className="container mx-auto p-4 pt-10">
         <motion.h1
@@ -162,7 +198,8 @@ const Home = () => {
           ))}
         </div>
       </div>
-      {/* Sección de por que elegir */}
+
+      {/* Sección de socios estratégicos */}
       <motion.div
         className="bgPorque text1 text-left mt-10 "
         initial={{ opacity: 0 }}
@@ -178,7 +215,7 @@ const Home = () => {
           viewport={{ once: true }}
         >
           ¿POR QUÉ ELEGIR A BELKETT FLOWER SHOP COMO SU SOCIO COMERCIAL?{" "}
-          <i className="text-red-700 fa-solid fa-heart"></i>
+          <i className="text-white fa-solid fa-handshake"></i>
         </motion.h1>
         <motion.p
           className="mb-3 text-lg text-white dark:text-gray-400 leading-relaxed"
@@ -227,7 +264,8 @@ const Home = () => {
           y contribuir al éxito de sus proyectos.
         </motion.p>
       </motion.div>
-      {/* Sección de socios comerciales */}
+
+      {/* Sección de equipo de trabajo */}
       <motion.div
         className="text1 text-left mt-10 px-6 sm:px-12 lg:px-20 max-w-4xl mx-auto"
         initial={{ opacity: 0 }}
@@ -311,7 +349,7 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <i className="text-yellow-400 fas fa-truck text-xl mt-1"></i>
+            <i className="text-white-400 fas fa-truck text-xl mt-1"></i>
             <div>
               <strong className="text-lg text-gray-900 dark:text-white">
                 Empresas de logística:
@@ -355,6 +393,131 @@ const Home = () => {
           tendencias y necesidades del mercado. Agradecemos a cada uno de
           nuestros socios por ser parte de la familia Belkett y ayudarnos a
           crear momentos inolvidables para nuestros clientes.
+        </motion.p>
+      </motion.div>
+
+      {/* Sección de equipo de trabajo */}
+      <motion.div
+        className="bgPorque text1 text-left mt-10"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <motion.h1
+          className="mb-10 text-3xl font-serif textPorque"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          NUESTRO EQUIPO DE TRABAJO{" "}
+          <i className="text-white fa-solid fa-people-group"></i>
+        </motion.h1>
+
+        <motion.p
+          className="mb-3 text-lg text-white dark:text-gray-400 leading-relaxed"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          En Belkett Flower Shop, nuestro talento humano es uno de los pilares
+          fundamentales de nuestro éxito. Cada miembro de nuestro equipo
+          desempeña un rol específico y vital, contribuyendo con su experiencia
+          y especialización en sus respectivas áreas. A continuación,
+          presentamos a los equipos que hacen posible nuestra operación diaria:
+        </motion.p>
+
+        {/* Equipo de Floristería */}
+        <motion.div
+          className="mt-6"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-extrabold text-white-400 mb-2">
+            · Equipo de Floristería
+          </h2>
+          <p className="text-lg text-white dark:text-gray-400 leading-relaxed">
+            Son los artistas detrás de la elaboración de todos nuestros
+            productos a base de flores frescas, incluyendo arreglos, bouquets y
+            cajas florales. Su dedicación y creatividad aseguran que cada diseño
+            cumpla con los más altos estándares de calidad y belleza.
+          </p>
+        </motion.div>
+
+        {/* Equipo Administrativo */}
+        <motion.div
+          className="mt-6"
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-extrabold text-white  mb-2">
+            · Equipo Administrativo
+          </h2>
+          <p className="text-lg text-white dark:text-gray-400 leading-relaxed">
+            Este equipo es responsable de la operatividad general de la empresa.
+            Gestionan procesos internos, logística, finanzas y aseguran que todo
+            funcione de manera eficiente y ordenada.
+          </p>
+        </motion.div>
+
+        {/* Equipo de Publicidad y Marketing */}
+        <motion.div
+          className="mt-6"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-extrabold text-white mb-2">
+            · Equipo de Publicidad y Marketing
+          </h2>
+          <p className="text-lg text-white dark:text-gray-400 leading-relaxed">
+            Encargados de dar a conocer nuestra marca y productos. Diseñan
+            campañas estratégicas, manejan nuestras redes sociales y se aseguran
+            de que el mensaje de Belkett llegue a nuestros clientes de manera
+            efectiva y atractiva.
+          </p>
+        </motion.div>
+
+        {/* Equipo de Ventas */}
+        <motion.div
+          className="mt-6"
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-bold text-white mb-2">
+            · Equipo de Ventas
+          </h2>
+          <p className="text-lg text-white dark:text-gray-400 leading-relaxed">
+            Este grupo es el rostro directo de Belkett con nuestros clientes. Se
+            encargan de brindar una atención personalizada, asesorar en la
+            selección de productos y garantizar una experiencia de compra
+            excepcional.
+          </p>
+        </motion.div>
+
+        {/* Filosofía de trabajo */}
+        <motion.p
+          className="mt-6 text-lg text-white dark:text-gray-400 leading-relaxed"
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          Aunque cada equipo tiene un rol específico, en Belkett fomentamos un
+          ambiente de colaboración donde todos aportan su experiencia, ideas y
+          apoyo cuando es necesario. Nos preocupamos por el desarrollo personal
+          y profesional de cada colaborador, brindándoles la libertad de tomar
+          iniciativas, proponer mejoras y desempeñar sus funciones con autonomía
+          dentro de los lineamientos establecidos.
         </motion.p>
       </motion.div>
     </div>
