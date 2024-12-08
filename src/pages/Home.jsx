@@ -89,7 +89,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }} // Animación activa
               exit={{ opacity: 0, y: -50 }} // Animación de salida
               transition={{ duration: 0.8 }} // Duración de la animación
-              className="text-red-700"
+              className="textcolor"
             >
               {words[currentWordIndex]}
             </motion.span>
@@ -112,11 +112,7 @@ const Home = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <img
-            className="h-16"
-            src="/public/logo-largo.png "
-            alt="logo de Belkett"
-          />
+          <img className="h-16" src="/logo-largo.png " alt="logo de Belkett" />
           <hr></hr>
         </motion.h1>
         <motion.p
@@ -349,7 +345,7 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <i className="text-white-400 fas fa-truck text-xl mt-1"></i>
+            <i className="text-yellow-400 fas fa-truck text-xl mt-1"></i>
             <div>
               <strong className="text-lg text-gray-900 dark:text-white">
                 Empresas de logística:
@@ -437,7 +433,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-extrabold text-white-400 mb-2">
+          <h2 className="text-2xl font-extrabold text-white mb-2">
             · Equipo de Floristería
           </h2>
           <p className="text-lg text-white dark:text-gray-400 leading-relaxed">

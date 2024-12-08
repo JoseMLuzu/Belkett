@@ -10,9 +10,9 @@ import {
 import "../styles/Contacto.css";
 const Contacto = () => {
   return (
-    <div className="contacto bg-gradient-to-b from-gray-100 to-gray-50 py-10 px-5">
+    <div className="contacto bg-black py-10 px-5">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-10">
+        <h2 className="contactotext text-4xl font-extrabold text-center text-white mb-10">
           Contáctanos
         </h2>
 

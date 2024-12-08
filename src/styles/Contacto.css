@@ -3,6 +3,12 @@
   margin-bottom: 100px;
 }
 
+.contactotext {
+  background-color: black;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 /* Efecto de entrada suave */
 
 .contacto {
