@@ -22,7 +22,13 @@ const Accesorios = () => {
       id: 3,
       name: "Brindis Por Ti",
       image: "/accesorios/accesorios3.png",
-      price: "60",
+      price: 60,
+    },
+    {
+      id: 4,
+      name: "Tanto Tiempo",
+      image: "/accesorios/accesorios4.jpg",
+      price: 118,
     },
   ];
 

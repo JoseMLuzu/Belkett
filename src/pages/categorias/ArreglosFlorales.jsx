@@ -9,22 +9,31 @@ const ArreglosFlorales = () => {
       id: 1,
       name: "Otra Oportunidad",
       image: "/arreglos/arreglos1.png",
+      price: 45,
     },
     {
       id: 2,
       name: "Desde Que Te Vi",
       image: "/arreglos/arreglos2.png",
-      description: "Rosas, Fucsias, Crisantemos, Astromelias",
+      price: 45,
     },
     {
       id: 3,
       name: "Perfecta",
       image: "/arreglos/arreglos3.png",
+      price: 45,
     },
     {
-      id: 3,
+      id: 4,
       name: "Curiosidad",
       image: "/arreglos/arreglos4.png",
+      price: 38,
+    },
+    {
+      id: 5,
+      name: "Curiosidad",
+      image: "/arreglos/arreglos5.jpg",
+      price: 45,
     },
   ];
 
@@ -56,7 +65,9 @@ const ArreglosFlorales = () => {
                   </h5>
                 </a>
                 <div className="flex items-center justify-between">
-                  <span className=" text-gray-600 dark:text-white"></span>
+                  <span className=" text-gray-600 dark:text-white">
+                    $ {product.price}
+                  </span>
                 </div>
               </div>
             </div>

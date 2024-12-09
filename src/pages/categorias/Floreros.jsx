@@ -36,6 +36,12 @@ const Floreros = () => {
       image: "/floreros/floreros5.png",
       price: 75,
     },
+    {
+      id: 5,
+      name: "Si Supieras",
+      image: "/floreros/floreros6.jpg",
+      price: 35,
+    },
   ];
 
   return (

@@ -24,6 +24,18 @@ const Plantas = () => {
       image: "/plantas/plantas1.png",
       price: 48,
     },
+    {
+      id: 4,
+      name: "Mía",
+      image: "/plantas/plantas4.jpg",
+      price: 28,
+    },
+    {
+      id: 5,
+      name: "Estás Aquí",
+      image: "/plantas/plantas5.jpg",
+      price: 48,
+    },
   ];
 
   return (

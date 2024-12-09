@@ -10,37 +10,55 @@ const CajasFlorales = () => {
       id: 1,
       name: "Como Quisiera Decirte",
       image: "/CajasFlorales/cajas5.png",
-      description: 28,
+      price: 28,
     },
     {
       id: 2,
       name: "No Te Aparte De Mí",
       image: "/CajasFlorales/cajas6.png",
-      description: 28,
+      price: 28,
     },
     {
       id: 3,
       name: "Algo Contigo",
       image: "/CajasFlorales/cajas2.png",
-      description: 45,
+      price: 45,
     },
     {
       id: 4,
       name: "Amiga Mía",
       image: "/CajasFlorales/cajas1.png",
-      description: 65,
+      price: 65,
     },
     {
       id: 5,
       name: "Para Empezar",
       image: "/CajasFlorales/cajas3.png",
-      description: 65,
+      price: 65,
     },
     {
       id: 6,
       name: "Nunca Es Suficiente",
       image: "/CajasFlorales/cajas4.png",
-      description: 75,
+      price: 75,
+    },
+    {
+      id: 7,
+      name: "Otra Como Tú",
+      image: "/CajasFlorales/cajas7.jpg",
+      price: 65,
+    },
+    {
+      id: 8,
+      name: "Un Amor",
+      image: "/CajasFlorales/cajas8.jpg",
+      price: 65,
+    },
+    {
+      id: 9,
+      name: "Será Que Sí",
+      image: "/CajasFlorales/cajas9.jpg",
+      price: 65,
     },
   ];
 
@@ -72,7 +90,7 @@ const CajasFlorales = () => {
                 </a>
                 <div className="flex items-center justify-between">
                   <span className=" text-gray-600 dark:text-white">
-                    $ {product.description}
+                    $ {product.price}
                   </span>
                 </div>
               </div>

@@ -27,9 +27,59 @@ const Bouquets = () => {
       image: "/bouquets/bouquet4.png",
     },
     {
-      id: 4,
+      id: 5,
       name: "Detalles",
       image: "/bouquets/bouquet5.png",
+    },
+    {
+      id: 6,
+      name: "Volver Junto A Ti",
+      image: "/bouquets/bouquet6.jpg",
+    },
+    {
+      id: 7,
+      name: "Cómo Le Digo",
+      image: "/bouquets/bouquet7.jpg",
+    },
+    {
+      id: 8,
+      name: "Voy a Vos",
+      image: "/bouquets/bouquets8.jpg",
+    },
+    {
+      id: 9,
+      name: "Rayando el Sol",
+      image: "/bouquets/bouquets9.jpg",
+    },
+    {
+      id: 10,
+      name: "Esa niña",
+      image: "/bouquets/bouquets10.jpg",
+    },
+    {
+      id: 11,
+      name: "Si Tú Me Dices Ven",
+      image: "/bouquets/bouquets11.jpg",
+    },
+    {
+      id: 12,
+      name: "EL Amor",
+      image: "/bouquets/bouquets12.jpg",
+    },
+    {
+      id: 13,
+      name: "Para Que No Me Olvides",
+      image: "/bouquets/bouquets13.jpg",
+    },
+    {
+      id: 14,
+      name: "El Destino",
+      image: "/bouquets/bouquets16.jpg",
+    },
+    {
+      id: 15,
+      name: "Contra Viento Y Marea",
+      image: "/bouquets/bouquets15.jpg",
     },
   ];
 
