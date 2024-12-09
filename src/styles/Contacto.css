@@ -5,8 +5,9 @@
 
 .contactotext {
   background-color: black;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding: 20px;
 }
 
 /* Efecto de entrada suave */
