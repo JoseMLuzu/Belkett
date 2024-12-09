@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import BackgroundImage from "/banners/banner2.png";
+import BackgroundImage from "/banners/bannerPrincipal-transformed.jpeg";
 
 import "../styles/Home.css";
 
@@ -59,9 +59,9 @@ const Home = () => {
     "Belleza",
     "Arte",
     "Vida",
-    "Confianza",
-    "Libertad",
     "Historia",
+    "Paz",
+    "Gozo",
   ];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
@@ -80,9 +80,9 @@ const Home = () => {
         className="jumbo bg-center bg-no-repeat bg-gray-400 bg-blend-multiply"
         style={{ backgroundImage: `url(${BackgroundImage})` }}
       >
-        <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 ">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-            Belkett es{" "}
+            <img className="imgb" src="/Belkett_logo-no-fondo.png" /> es{" "}
             <motion.span
               key={currentWordIndex} // Cambiar key para reiniciar la animación
               initial={{ opacity: 0, y: 50 }} // Animación de entrada
