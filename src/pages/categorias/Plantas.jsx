@@ -8,32 +8,32 @@ const Plantas = () => {
   const products = [
     {
       id: 1,
-      name: "Amor Eterno",
-      image: "/plantas/plantas3.png",
-      price: 35,
+      name: "Estás Aquí",
+      image: "/plantas/plantas5.jpg",
+      price: 25,
     },
     {
       id: 2,
-      name: "Por Fin Te Encontré",
-      image: "/plantas/plantas2.png",
-      price: 38,
-    },
-    {
-      id: 3,
-      name: "Happy Together",
-      image: "/plantas/plantas1.png",
-      price: 48,
-    },
-    {
-      id: 4,
       name: "Mía",
       image: "/plantas/plantas4.jpg",
       price: 28,
     },
     {
+      id: 3,
+      name: "Amor Eterno",
+      image: "/plantas/plantas3.png",
+      price: 35,
+    },
+    {
+      id: 4,
+      name: "Por Fin Te Encontré",
+      image: "/plantas/plantas2.png",
+      price: 38,
+    },
+    {
       id: 5,
-      name: "Estás Aquí",
-      image: "/plantas/plantas5.jpg",
+      name: "Happy Together",
+      image: "/plantas/plantas1.png",
       price: 48,
     },
   ];

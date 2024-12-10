@@ -31,7 +31,7 @@ const ArreglosFlorales = () => {
     },
     {
       id: 5,
-      name: "Curiosidad",
+      name: "Abracadabra",
       image: "/arreglos/arreglos5.jpg",
       price: 45,
     },

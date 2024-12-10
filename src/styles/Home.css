@@ -123,6 +123,6 @@
 
 @media (max-width: 480px) {
   .imgb {
-    max-width: 70%; /* Ajusta la imagen a pantallas pequeñas */
+    max-width: 60%; /* Ajusta la imagen a pantallas pequeñas */
   }
 }

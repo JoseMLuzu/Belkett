@@ -83,6 +83,7 @@ const Home = () => {
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 ">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             <img className="imgb" src="/Belkett_logo-no-fondo.png" /> es{" "}
+            <br></br>
             <motion.span
               key={currentWordIndex} // Cambiar key para reiniciar la animación
               initial={{ opacity: 0, y: 50 }} // Animación de entrada
@@ -99,14 +100,14 @@ const Home = () => {
 
       {/* Sección de introducción */}
       <motion.div
-        className="text1 text-left mt-10"
+        className="fo text1 text-left mt-10"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
         <motion.h1
-          className=" mb-8 text-4xl font-serif text-gray-900 dark:text-white"
+          className=" fo mb-8 text-4xl font-serif text-gray-900 dark:text-white"
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -116,7 +117,7 @@ const Home = () => {
           <hr></hr>
         </motion.h1>
         <motion.p
-          className="pa1 mb-3 text-lg text-gray-800 dark:text-gray-400 leading-relaxed"
+          className="fo pa1 mb-3 text-lg text-gray-800 dark:text-gray-400 leading-relaxed"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -129,7 +130,7 @@ const Home = () => {
           significativos.
         </motion.p>
         <motion.p
-          className="pa1 text-lg text-gray-800 dark:text-gray-400 leading-relaxed"
+          className="fo pa1 text-lg text-gray-800 dark:text-gray-400 leading-relaxed"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -145,9 +146,9 @@ const Home = () => {
       </motion.div>
 
       {/* Sección de productos */}
-      <div className="container mx-auto p-4 pt-10">
+      <div className="fo container mx-auto p-4 pt-10">
         <motion.h1
-          className="mb-8 text-4xl font-serif font-bold  text-gray-900 dark:text-white"
+          className="fo mb-8 text-4xl font-serif font-bold  text-gray-900 dark:text-white"
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -155,11 +156,11 @@ const Home = () => {
         >
           NUESTROS PRODUCTOS
         </motion.h1>
-        <div className="zoom-container2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="fo zoom-container2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product) => (
             <motion.div
               key={product.id}
-              className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              className="fo w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0px 10px 15px rgba(0,0,0,0.1)",
@@ -172,7 +173,7 @@ const Home = () => {
             >
               <Link to={product.link}>
                 <motion.img
-                  className=" p-8 rounded-t-lg"
+                  className="fo p-8 rounded-t-lg"
                   src={product.image}
                   alt={product.name}
                 />
@@ -180,7 +181,7 @@ const Home = () => {
               <div className="px-5 pb-5">
                 <Link to={product.link}>
                   <motion.h5
-                    className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    className="fo text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6 }}
@@ -204,7 +205,7 @@ const Home = () => {
         viewport={{ once: true }}
       >
         <motion.h1
-          className=" mb-10 text-3xl font-serif textPorque"
+          className=" fo mb-10 text-3xl font-serif textPorque"
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
