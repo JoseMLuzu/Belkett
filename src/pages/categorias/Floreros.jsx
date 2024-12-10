@@ -66,11 +66,9 @@ const Floreros = () => {
                 />
               </a>
               <div className="px-5 pb-5">
-                <a href="#">
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    {product.name}
-                  </h5>
-                </a>
+                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                  {product.name}
+                </h5>
                 <div className="flex items-center justify-between">
                   <span className=" text-gray-600 dark:text-white">
                     ${product.price}
